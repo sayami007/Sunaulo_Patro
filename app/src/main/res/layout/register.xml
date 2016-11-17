@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/appCompatStyle">
+
+
+    <ImageView
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:id="@+id/logo"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/logo2"
+        android:foregroundTint="#F89B5B" />
+
+    <EditText
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mother"
+        android:hint="Mother Name"
+        android:textColorHint="#FF6C00"
+        android:textColorLink="#FF6C00"/>
+
+    <EditText
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/guardian"
+        android:hint="Guardian Name"
+        android:textColorHint="#FF6C00"
+        android:textColorLink="#FF6C00"
+        />
+
+    <TextView
+        android:layout_margin="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Conception Date"
+        android:id="@+id/conception"
+        android:textColor="#FF6C00" />
+
+    <DatePicker
+        android:layout_width="wrap_content"
+        android:layout_height="93dp"
+        android:id="@+id/datePicker"
+        android:layout_gravity="center_horizontal"
+        android:background="#FF6C00"
+        android:calendarViewShown="true" />
+
+    <EditText
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/mobile"
+        android:hint="Mobile No."
+        android:textColorHint="#FF6C00"
+        android:textColorLink="#FF6C00"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SUBMIT"
+        android:id="@+id/submit"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#FF6C00"
+   />
+
+
+</LinearLayout>

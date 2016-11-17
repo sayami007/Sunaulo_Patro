@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:nestedScrollingEnabled="true"
+    android:orientation="vertical"
+    android:background="@drawable/main_header_selector"
+
+    android:weightSum="1">
+
+    <ImageView
+        android:id="@+id/largaeimage"
+        android:layout_width="match_parent"
+        android:layout_height="200sp"
+        android:baselineAlignBottom="true"
+        android:fadingEdge="vertical"
+        android:foreground="@drawable/shak" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/largaeimage">
+
+        <LinearLayout
+            android:id="@+id/li"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/largaeimage"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/eventhead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/event"
+                android:layout_margin="10dp"
+                android:text="Event Title"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/event"
+                android:layout_width="wrap_content"
+                android:layout_height="50sp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="10dp"
+                android:nestedScrollingEnabled="true"
+                android:text="kjhjkfhgjkhfdjkghjkdfhgjkfhgjkdfhjkghdfjkhgkjfhgjkdfhjkghdfjkghjkdf"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/eventdescriptionhead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Event Description"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/eventdescription"
+                android:layout_width="wrap_content"
+                android:layout_height="60sp"
+                android:layout_alignEnd="@+id/Mapbutton"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignRight="@+id/Mapbutton"
+                android:layout_below="@+id/eventdescriptionhead"
+                android:layout_margin="10dp"
+                android:nestedScrollingEnabled="true"
+                android:text="kjsdfhkjdsfjkdsgfjkdsgfdshjkghdsjkghjkdfhgjkdhjkgsdhjkghdsjkhgjkdshgjkdshjksdhgjkdshjkgt"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/datehead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/eventdescription"
+                android:layout_margin="10dp"
+                android:text="Date and Time"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="20sp"
+                android:layout_alignEnd="@+id/Mapbutton"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignRight="@+id/Mapbutton"
+                android:layout_below="@+id/datehead"
+                android:layout_margin="10dp"
+                android:text="YYYY:MM:DD HH:MM:SS"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+            <Button
+                android:id="@+id/map"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Show Map" />
+            <Button
+                android:id="@+id/floatingActionButton3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="50dp"
+                android:text="Add to Remainder" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
+
+

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/main_header_selector">
+
+
+    <TextView
+        android:text="Event Calendar Module"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textSize="40dp"
+        android:gravity="center"
+
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView" />
+</RelativeLayout>
